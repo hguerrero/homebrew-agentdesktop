@@ -8,7 +8,7 @@ visibility and management layer for AI tools across a desktop fleet.
 ### macOS (desktop app, daemon, and CLI)
 
 ```sh
-brew install --cask agentdesktop-dev/agentdesktop/agentdesktop
+brew install --cask hguerrero/agentdesktop/agentdesktop
 ```
 
 This installs the notarized upstream PKG: `agentdesktop.app`, the
@@ -18,17 +18,17 @@ installer asks for an administrator password.
 ### Linux without a desktop (RHEL 8, WSL, VDI)
 
 ```sh
-brew install agentdesktop-dev/agentdesktop/agentdesktop-headless
+brew install hguerrero/agentdesktop/agentdesktop-headless
 ```
 
 This installs the statically linked headless binary as `agentdesktop`. Create
 `~/.config/agentdesktop/config.yaml` first, then run the daemon with
 `brew services start agentdesktop-headless`. See `brew info agentdesktop-headless`.
 
-Or `brew tap agentdesktop-dev/agentdesktop` and then install by name, or use a `Brewfile`:
+Or `brew tap hguerrero/agentdesktop` and then install by name, or use a `Brewfile`:
 
 ```ruby
-tap "agentdesktop-dev/agentdesktop"
+tap "hguerrero/agentdesktop"
 cask "agentdesktop"             # macOS
 brew "agentdesktop-headless"    # Linux
 ```
@@ -39,8 +39,8 @@ The `brew bump` workflow opens a pull request daily when upstream publishes a ne
 release. To bump by hand:
 
 ```sh
-brew bump-cask-pr --version <version> agentdesktop-dev/agentdesktop/agentdesktop
-brew bump-formula-pr --version <version> agentdesktop-dev/agentdesktop/agentdesktop-headless
+brew bump-cask-pr --version <version> hguerrero/agentdesktop/agentdesktop
+brew bump-formula-pr --version <version> hguerrero/agentdesktop/agentdesktop-headless
 ```
 
 ## Documentation
