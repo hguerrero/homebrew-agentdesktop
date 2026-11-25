@@ -1,8 +1,8 @@
 class AgentdesktopHeadless < Formula
   desc "Agentdesktop daemon and CLI without the desktop UI, for headless Linux hosts"
   homepage "https://agentdesktop.dev/"
-  url "https://github.com/agentdesktop-dev/agentdesktop/releases/download/v0.6.0/agentdesktop-headless-linux-amd64"
-  sha256 "e6c66f1a62ed91d36d60e219da69cf17dc00f68401a6e5f1712743f4e2952186"
+  url "https://github.com/agentdesktop-dev/agentdesktop/releases/download/v0.7.0/agentdesktop-headless-linux-amd64"
+  sha256 "e35e3ca503e187fe11ce9b15a6f8078da0c37642db485dfa3ed84f76c35c0c1d"
   license "Apache-2.0"
 
   livecheck do
