@@ -1,9 +1,9 @@
 cask "agentdesktop" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.6.0"
-  sha256 arm:   "5bc4da5ef06597ccac1375e0ee10a1e2a8f0dddc8641fe00410c9f7b36af26c8",
-         intel: "63d7dd9ce6b33300f81a8a154a04907ae2fedd8f8abe478e599559aa56076f41"
+  version "0.7.0"
+  sha256 arm:   "5f3a539ae07211a8337272e2ca596786bfcce6086d247e652dfc7c6e2a74338f",
+         intel: "d543dcf6be3fd737dc5b9aba5778e116ff7f9766b4f6bb97f813703f53428419"
 
   url "https://github.com/agentdesktop-dev/agentdesktop/releases/download/v#{version}/agentdesktop-macos-#{arch}.pkg"
   name "Agentdesktop"
